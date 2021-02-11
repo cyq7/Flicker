@@ -1,0 +1,78 @@
+@import './components/styles/mediaqueries';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/movie.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 14px;
+    overflow-X: hidden;
+
+    @include md {
+        font-size: 16px;
+    }
+
+    @include lg {
+        font-size: 18px;
+    }
+
+}
+
+#root {
+    background: rgba(0, 0, 0, 0.9);
+    min-height: 100vh;
+}
+
+/*font sizes*/
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+span {
+  font-size: 1.3em;
+}
+
+input,
+label,
+select,
+button,
+textarea
+{
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+    box-sizing: border-box;
+	font-size:13px;
+    font-family:Arial;
+    color: white;
+
+    &:focus {
+	    outline:0;
+    }
+}
+
+input, textarea {
+  padding: 1%;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+

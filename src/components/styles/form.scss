@@ -1,0 +1,89 @@
+@import './base';
+
+.textInput {
+    @include presets;
+    width: 70%;
+    border-radius: 0;
+    margin: 1em 0.8em;
+    padding: 0.4em;
+
+    &:hover {
+        text-shadow: none;
+    }
+}
+ .formBtn {
+  margin: 0.8em;
+  padding: 0.7em;
+  cursor: pointer;
+  border-radius: 10px;
+  display: inline-block;
+  border: none;
+  transition: all 0.2s linear;
+  font-size: 0.9em;
+  color: #ccc;
+
+  &:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, $dark-purple, $light-purple);
+    box-shadow: 0 0 10px $dark-purple;
+    color: #fff;
+  }
+
+  &:focus {
+      outline: 0;
+  }
+
+  i{
+      font-size: 1.5em;
+  }
+}
+
+// SPECIFIC ADDING FORM STYLES
+.addMovie {
+  .textInput{
+  background:linear-gradient(to right, $dark-purple 40%, transparent) left bottom no-repeat;
+  background-size:100% 1px;
+      &:focus {
+      background:0;
+      background:linear-gradient(to right, $dark-purple 100%, transparent) left bottom no-repeat;
+      background-size: 100% 2px;
+
+        & + .formBtn{
+        background: linear-gradient(to right, $dark-purple, $light-purple);
+        box-shadow: 0 0 10px $dark-purple;
+        color: #fff;
+      }
+    }
+  }
+}
+
+//SPECIFIC SEARCHING FORM STYLES
+.searchMovie {
+  .textInput {
+  background:linear-gradient(to right, $dark-pink 40%, transparent) left bottom no-repeat;
+  background-size:100% 1px;
+
+      &:focus {
+      background:0;
+      background:linear-gradient(to right, $dark-pink 100%, transparent) left bottom no-repeat;
+      background-size: 100% 2px;
+      
+      & + .formBtn{
+        background: linear-gradient(to right, $dark-pink, $light-pink);
+        box-shadow: 0 0 10px $dark-pink;
+        color: #fff;
+      }
+    }
+  }
+
+  .formBtn {
+    &:hover {
+      background: linear-gradient(to right, $dark-pink, $light-pink);
+      box-shadow: 0 0 10px $dark-pink;
+    }
+
+  }
+}
+ 
+
+

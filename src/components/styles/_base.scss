@@ -1,0 +1,38 @@
+//shadows
+$header-shadow: 0 0 5px #ddd, 0 0 10px #999, 0 0 20px #999, 0 0 30px #999;
+$inner-box-shadow: inset 0 0 20px #000000;
+$outer-box-shadow: 0 0 20px #000000;
+$text-shadow: 0 0 5px white;
+
+//colors
+$section-color: rgba(50, 50, 50, 0.5);
+$light-purple: #bb55fb;
+$dark-purple: #9921E8;
+$light-green: #78D969;
+$dark-green: #45B649;
+$light-gold: #ffe259;
+$dark-gold: #ffa751;
+$light-pink: #ff4dcc;
+$dark-pink: #ee0979;
+$light-blue: #33a5ff;
+$dark-blue: #0072ff;
+
+//mixins
+@mixin presets {
+  padding: 4%;
+  margin: 3% 0;
+  font-size: 1.5em;
+  list-style-type: none;
+  transition: all 0.2s linear;
+  color: #ccc;
+  
+
+  &:hover {
+      transform: scale(1.05);
+      text-shadow: $text-shadow;
+      color: #fff;
+  }
+}
+
+
+

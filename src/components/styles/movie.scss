@@ -1,0 +1,50 @@
+@import './base';
+@import './mediaqueries';
+
+.movie {
+  border: 1px solid $dark-purple;
+  box-shadow: 0 0 10px $dark-purple, 0 0 20px #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  @include presets;
+
+  &:hover{
+    button {
+      color: #999;
+    }
+  }
+
+    .movieTitle {
+      word-wrap: break-word;
+      text-align: left;
+      max-width: 75%;
+      height: auto;
+      font-size: 0.9em;
+      max-height: auto;
+    }
+
+    .reactions {
+      button {
+        cursor: pointer;
+        font-size: 0.8em;
+        margin-left: 1em;
+        color: #666;
+      }
+
+      .check {
+        &:hover .fa-check {
+          color: #78D969;
+          text-shadow: 0 0 6px #78D969;
+        }
+      }
+      .trash {
+        &:hover .fa-trash-alt {
+          color: #ff4444;
+          text-shadow: 0 0 1px #ff4444;
+        }
+      }
+    }
+}
+
+

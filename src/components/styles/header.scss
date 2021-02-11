@@ -1,0 +1,18 @@
+@import './base';
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 5%;
+    color: #ddd;
+
+    &:hover {
+        color: #fff;
+    }
+    
+    h1 {
+        &:hover{ 
+            text-shadow: $header-shadow;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import './base';
+@import './mediaqueries';
+
+#container {
+    height: 100%;
+    padding: 3%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "towatch"
+    "watched";
+    
+    @include lg  {
+    padding: 1%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    max-width: 1200px;
+    grid-template-areas:
+    "header header"
+    "towatch watched"
+    }
+}
+
+
+
+
+
+
+

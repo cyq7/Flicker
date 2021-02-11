@@ -1,0 +1,55 @@
+@import './base';
+
+.showMoreBtn {
+    @include presets;
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    margin: 3% auto;
+    cursor: pointer;
+}
+
+.all .showMoreBtn {
+    border: 1px solid $dark-green;
+    box-shadow: 0 0 10px $light-green;
+
+    &:hover {
+        background: linear-gradient(to right, $dark-green, $light-green);
+        border: 1px solid transparent;
+        box-shadow: 0 0 10px  $dark-green, 0 0 10px $light-green;
+    }
+}
+
+.favourite .showMoreBtn {
+    border: 1px solid $dark-gold;
+    box-shadow: 0 0 10px $light-gold;
+
+    &:hover {
+        background: linear-gradient(to right, $dark-gold, $light-gold);
+        border: 1px solid transparent;
+        box-shadow: 0 0 10px  $dark-gold, 0 0 10px $light-gold;
+    }
+}
+
+.liked .showMoreBtn {
+    border: 1px solid $dark-pink;
+    box-shadow: 0 0 10px $light-pink;
+
+    &:hover {
+        background: linear-gradient(to right, $dark-pink, $light-pink);
+        border: 1px solid transparent;
+        box-shadow: 0 0 10px  $dark-pink, 0 0 10px $light-pink;
+    }
+}
+
+.disliked .showMoreBtn {
+    border: 1px solid $dark-blue;
+    box-shadow: 0 0 10px $light-blue;
+
+    &:hover {
+        background: linear-gradient(to right, $dark-blue, $light-blue);
+        border: 1px solid transparent;
+        box-shadow: 0 0 10px  $dark-blue, 0 0 10px $light-blue;
+    }
+}
