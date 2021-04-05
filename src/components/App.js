@@ -4,37 +4,27 @@ import Section from './Section'
 import Form from './Form'
 import Movie from './Movie'
 import ShowMoreBtn from './ShowMoreBtn'
+import toWatch from '../data.js'
 
 const App = () => {
     return (
         <div id="container">
             <Header />
             <Section className="toWatch" header="Musimy zobaczyć">
-                <Form 
+                <Form
                     formClass="addMovie"
                     btn="fas fa-plus"
                 />
                 <ul className="movieList">
-                    <Movie
-                        title="Jak wojtek został strażakiem"
-                        className="movie"
-                    />
-                    <Movie
-                        title="Interstellar"
-                        className="movie"
-                    />
-                    <Movie
-                        title="Grawitacja"
-                        className="movie"
-                    />
-                    <Movie
-                        title="OMG"
-                        className="movie"
-                    />
-                    <Movie
-                        title="Sranko"
-                        className="movie"
-                    />
+                {toWatch.map((movie) => {
+                    return (
+                        <Movie
+                            key={movie.title}
+                            title={movie.title}
+                            className="movie"
+                        />
+                    )
+                })}
                 </ul>
             </Section>
             <Section
