@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Project in progress
+Ultimately the application is to be based on a database. 
+The application is to be created for my own needs. I would like to save movies in 'to watch' section and collect everything I have watched. All films will be stored in separate sections depending on my rating.
+
+At this moment, I have created a graphic layout and rebuilt code structure for React (JSX). I have implemented core functionality on hardcoded titles.
+
+![image](https://user-images.githubusercontent.com/65857670/115116938-83ce9300-9f9c-11eb-9a92-ef0c5cb1ff0b.png)
+
+----------------------
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
