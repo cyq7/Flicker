@@ -1,6 +1,6 @@
 # Project in progress
 Ultimately the application is to be based on a database. 
-The application is to be created for my own needs. I would like to save movies in 'to watch' section and collect everything I have watched. All films will be stored in separate sections depending on my rating.
+The application is created for my own needs. I would like to save movies in 'to watch' section and collect everything I have watched. All films will be stored in separate sections depending on my rating.
 
 At this moment, I have created a graphic layout and rebuilt code structure for React (JSX). I have implemented core functionality on hardcoded titles.
 
